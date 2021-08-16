@@ -33,3 +33,4 @@ aconfig.set("First-object","element");
 aconfig.reloadConfig();
 aconfig.saveConfig();
 ```
+There are also Javadoc comments before every method.<br>
