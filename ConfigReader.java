@@ -23,7 +23,7 @@ public class ConfigReader {
         if (!filepath.exists()) {
             boolean success = filepath.mkdirs();
             if (!success)
-                Bukkit.getLogger().info("Error creating the config. Please try again.");
+                Bukkit.getLogger().warning("Error creating the config. Please try again.");
         }
         if (!file.exists())
             this.plugin.saveResource(path + name, false);
@@ -67,7 +67,7 @@ public class ConfigReader {
         try {
             config.save(file);
         } catch (Throwable t) {
-            Bukkit.getLogger().info("Error saving the config. Please try again.");
+            Bukkit.getLogger().warning("Error saving the config. Please try again.");
         }
     }
 
