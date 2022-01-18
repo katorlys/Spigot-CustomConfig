@@ -34,3 +34,9 @@ aconfig.reloadConfig();
 aconfig.saveConfig();
 ```
 There are also Javadoc comments before every method.<br>
+
+### Save Config
+Combining `saveConfig()` with `reloadConfig()`, this can be used on plugin disable and after setting some keys in a config.<br>
+```java
+ConfigReader.save(this.AConfig);
+```

@@ -23,7 +23,7 @@ public class ConfigReader {
         if (!filepath.exists()) {
             boolean success = filepath.mkdirs();
             if (!success)
-                Bukkit.getLogger().warning("Error creating the config. Please try again.");
+                Bukkit.getLogger().severe("Error creating the config. Please try again.");
         }
         if (!file.exists())
             this.plugin.saveResource(path + name, false);
@@ -67,7 +67,7 @@ public class ConfigReader {
         try {
             config.save(file);
         } catch (Throwable t) {
-            Bukkit.getLogger().warning("Error saving the config. Please try again.");
+            Bukkit.getLogger().severe("Error saving the config. Please try again.");
         }
     }
 
@@ -77,5 +77,14 @@ public class ConfigReader {
         this.name = filename;
         this.filepath = new File(plugin.getDataFolder(), path);
         this.file = new File(filepath, name);
+    }
+
+    /**
+     * Excute the function of saveConfig() and reloadConfig()
+     * 
+     */
+    public static void save(ConfigReader config) {
+        config.saveConfig();
+        config.reloadConfig();
     }
 }
