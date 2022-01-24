@@ -1,5 +1,5 @@
 # Spigot-CustomConfig
-[![License](https://img.shields.io/badge/license-GPLv3-blue?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0.html)  ![Pull Requests](https://img.shields.io/github/issues-pr-closed/katorlys/Spigot-CustomConfig?style=for-the-badge) ![Issues](https://img.shields.io/github/issues-closed/katorlys/Spigot-CustomConfig?style=for-the-badge)
+[![License](https://img.shields.io/badge/license-GPLv3-blue?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.html) [![Pull Requests](https://img.shields.io/github/issues-pr-closed/katorlys/Spigot-CustomConfig?style=flat-square)](https://github.com/katorlys/Spigot-CustomConfig/pulls) [![Issues](https://img.shields.io/github/issues-closed/katorlys/Spigot-CustomConfig?style=flat-square)](https://github.com/katorlys/Spigot-CustomConfig/issues) [![Lines](https://img.shields.io/tokei/lines/github/katorlys/Spigot-CustomConfig?style=flat-square)](https://github.com/katorlys/Spigot-CustomConfig)
 
 ## Introduction
 Bukkit API only allows you to create one config for each plugins, and there is no sign that it will change the situation in the future versions.<br>
